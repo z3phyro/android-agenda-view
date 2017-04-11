@@ -24,43 +24,43 @@ import java.util.Locale;
  */
 
 public class AgendaView extends View {
-    private final int TIME_LABEL_FONT_SIZE = (int) getResources().getDimension(R.dimen.origin_15dp);
-    private final int TIME_LABEL_VERTICAL_PADDING = (int) getResources().getDimension(R.dimen.origin_15dp)/2;
+    protected final int TIME_LABEL_FONT_SIZE = (int) getResources().getDimension(R.dimen.origin_15dp);
+    protected final int TIME_LABEL_VERTICAL_PADDING = (int) getResources().getDimension(R.dimen.origin_15dp)/2;
 
-    private final int DEPARTMENT_FONT_SIZE = (int) getResources().getDimension(R.dimen.origin_50dp)/2;
-    private final int DEPARTMENT_VERTICAL_PADDING = (int) getResources().getDimension(R.dimen.origin_30dp)/2;
+    protected final int DEPARTMENT_FONT_SIZE = (int) getResources().getDimension(R.dimen.origin_50dp)/2;
+    protected final int DEPARTMENT_VERTICAL_PADDING = (int) getResources().getDimension(R.dimen.origin_30dp)/2;
 
-    private final int ROUND_RECT_PADDING = (int) getResources().getDimension(R.dimen.origin_20dp)/2;
-    private final int ROUND_RECT_HEIGHT = (int) getResources().getDimension(R.dimen.origin_120dp)/2;
-    private final int ROUND_RECT_RADIUS = (int) getResources().getDimension(R.dimen.origin_8dp)/2;
+    protected final int ROUND_RECT_PADDING = (int) getResources().getDimension(R.dimen.origin_20dp)/2;
+    protected final int ROUND_RECT_HEIGHT = (int) getResources().getDimension(R.dimen.origin_120dp)/2;
+    protected final int ROUND_RECT_RADIUS = (int) getResources().getDimension(R.dimen.origin_8dp)/2;
 
-    private final int ROUND_TEXT_SIZE = (int) getResources().getDimension(R.dimen.origin_30dp)/2;
-    private final int ROUND_TEXT_HORIZONTAL_PADDING = (int) getResources().getDimension(R.dimen.origin_20dp)/2;
-    private final int ROUND_HORIZONTAL_PADDING = (int) getResources().getDimension(R.dimen.origin_4dp)/2;
+    protected final int ROUND_TEXT_SIZE = (int) getResources().getDimension(R.dimen.origin_30dp)/2;
+    protected final int ROUND_TEXT_HORIZONTAL_PADDING = (int) getResources().getDimension(R.dimen.origin_20dp)/2;
+    protected final int ROUND_HORIZONTAL_PADDING = (int) getResources().getDimension(R.dimen.origin_4dp)/2;
 
-    private final int VIEW_HEIGHT = (int) getResources().getDimension(R.dimen.origin_200dp)*5/2; // TODO Got to see this later
+    protected final int VIEW_HEIGHT = (int) getResources().getDimension(R.dimen.origin_200dp)*5/2; // TODO Got to see this later
 
-    private final DateTimeUtility dateTimeUtility = DateTimeUtility.getInstance();
+    protected final DateTimeUtility dateTimeUtility = DateTimeUtility.getInstance();
 
-    private int py = 0;
+    protected int py = 0;
 
-    private int totalHours = 18;
+    protected int totalHours = 18;
 
-    private int initialHour = 6;
+    protected int initialHour = 6;
 
-    private int rulerStartX = (int) getResources().getDimension(R.dimen.origin_100dp)*2; // TODO Got to see this later
+    protected int rulerStartX = (int) getResources().getDimension(R.dimen.origin_100dp)*2; // TODO Got to see this later
 
-    private int timeVisibility = View.VISIBLE;
+    protected int timeVisibility = View.VISIBLE;
 
-    private int viewWidth = (int) getResources().getDimension(R.dimen.origin_200dp)*10/2; // TODO Got to see this later
+    protected int viewWidth = (int) getResources().getDimension(R.dimen.origin_200dp)*10/2; // TODO Got to see this later
 
-    private int[] labelXPosition = new int[totalHours];
+    protected int[] labelXPosition = new int[totalHours];
 
-    private HashMap<String, List<IShift>> ShiftHashData;
+    protected HashMap<String, List<IShift>> ShiftHashData;
 
-    private List<ShiftRect> ShiftRects;
+    protected List<ShiftRect> ShiftRects;
 
-    private OnShiftClickListener shiftClickListener;
+    protected OnShiftClickListener shiftClickListener;
 
     public AgendaView(Context context) {
         super(context);
@@ -122,11 +122,11 @@ public class AgendaView extends View {
         setMeasuredDimension(measuredHeight, measuredWidth);
     }
 
-    private int measureHeight(int measureSpec) {
+    protected int measureHeight(int measureSpec) {
         return viewWidth;
     }
 
-    private int measureWidth(int measureSpec) {
+    protected int measureWidth(int measureSpec) {
         return VIEW_HEIGHT;
     }
 
@@ -140,7 +140,7 @@ public class AgendaView extends View {
 
     int MaxHeight = 0;
 
-    private void drawShifts(Canvas canvas) {
+    protected void drawShifts(Canvas canvas) {
         int px = 10;
 
         Paint mTextPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
