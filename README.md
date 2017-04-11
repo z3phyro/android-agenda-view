@@ -11,7 +11,7 @@ A very simple and extensible component to show the tasks/shifts schedule in a da
       android:layout_height="match_parent" />
 ```               
 
-And then fill it with a class that implements the AgendaView.IShift interface
+And then fill it with a class that implements the AgendaView.IShift interface:
 
 ```
     agendaView = (AgendaView) findViewById(R.id.agView);
