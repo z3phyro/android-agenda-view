@@ -1,6 +1,6 @@
 # Android Agenda View
 
-![alt text](https://github.com/z3phyro/android-agendaview/raw/master/example.png "Example image")
+![Example image](https://github.com/z3phyro/android-agendaview/raw/master/example.png "Example image")
 
 A very simple and extensible component to show the tasks/shifts schedule in a day/week. To use it you just need to add the following markup to you layout:
 
@@ -48,6 +48,6 @@ I uploaded the sample project so you can get anything you need there. On the cod
         
 ```
 
-The control is the class AgendaView.java specifically but it depends on a DateTimeUtility class I made to handle dates in Java. Also right now it's tightly coupled with a dimension values resource. I will work on that soon to make it a control that can be installed as a gradle dependency.
+The control is the class AgendaView.java specifically but it depends on a DateTimeUtility class which I made to handle dates in Java. Also right now it's tightly coupled with a dimension values resource. I will work on that soon to make it a control that can be installed as a gradle dependency.
 
  
