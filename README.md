@@ -1,5 +1,7 @@
 # Android Agenda View
 
+![alt text](https://github.com/z3phyro/android-agendaview/raw/master/example.png "Example image")
+
 A very simple and extensible component to show the tasks/shifts schedule in a day/week. To use it you just need to add the following markup to you layout:
 
 ```
