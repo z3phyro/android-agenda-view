@@ -2,7 +2,7 @@
 
 ![Example image](https://github.com/z3phyro/android-agendaview/raw/master/example.png "Example image")
 
-A very simple, interactive and extensible component to show the tasks/shifts schedule in a day/week. To use it you just need to add the following markup to you layout:
+A very simple, interactive and extensible component to show the tasks/shifts schedule in a day/week. To use it add the following markup to you layout:
 
 ```
   <dspot.z3phyro.agendaview.AgendaView
@@ -34,7 +34,6 @@ And then fill it with a class that implements the **AgendaView.IShift** interfac
 I uploaded the sample project so you can get anything you need there. On the code I made use of most of the configuration features.
 
 ```
-  agendaView.setRulerStartX(280);
   agendaView.setTimeVisibility(View.VISIBLE);
   agendaView.setInitialHour(4);
   agendaView.setTotalHours(20);
